@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header_logo">
+      <a href="https://heartdevs.com/" target="_blank"><img src="img/he4rtLogo.svg" alt="he4rtLogo"></a>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <nav class="header_nav">
+      <ul>
+        <li><a href="https://github.com/diiegoburiti" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/Diego21652936" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="title">
+    <h1> Calculadora de Hora <br> <span>Para Freelancers.</span></h1>
+  </div>
+  <section class="content_grid">
+    <div class="content_form">
+      <form id="form" action="">
+        <label for="daily_time">Tempo Diário</label>
+        <input type="number" min="1" max="24" for="daily_time" id="daily_time" required>
+        <label for="effective_days">Dias Efetivos</label>
+        <input type="number" min="1" for="effective_days" id="effective_days" required>
+        <label for="vacation_days">Dias de Férias</label>
+        <input type="number" min="1" for="vacation_days" id="vacation_days" required>
+        <label for="project_price">Valor do Projeto</label>
+        <input type="number" min="1" for="project_price" id="project_price" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <div id="content_result" class="content_result">
+        <span>Valor / Hora:</span><span id="result"></span> 
+      </div>
+    </div>
+    <div class="content_calculator">
+      <img src="img/undraw_Calculator.svg" alt="">
+    </div>
+  </section>
+  <footer class="footer"> 
+    <div>
+      <p>&copy; Este desafio foi desenvolvido pelo grupo <a href="https://heartdevs.com/">He4rt Developers</a> para uso livre da comunidade.</p>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>
